@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/*
+ ************************************************
+            VARIÁVEIS
+*************************************************
+*/
+/*
+ ************************************************
+            GERAL
+*************************************************
+*/
+li, a {
+  list-style: none;
+  text-decoration: none; }
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 90%;
+  margin: 5px 5%; }
+
+img {
+  width: 100%; }
+
+/*
+ ************************************************
+           HEADER
+*************************************************
+*/
+header ul {
+  display: flex;
+  justify-content: space-around;
+  width: 53%;
+  margin: 55px auto; }
+  header ul li a {
+    font-family: monospace;
+    color: black; }
+
+/*
+ ************************************************
+           MAIN
+*************************************************
+*/
+main {
+  text-align: center; }
+  main h1 {
+    font-family: 'Kalam', cursive;
+    color: #7aabe3e3; }
+  main h3 {
+    font-family: 'Kalam', cursive;
+    color: #7aabe3e3; }
+  main div {
+    width: 88%;
+    padding: 5px 54px; }
+  main nav {
+    box-sizing: border-box;
+    width: 25%;
+    background: #9dbbdf9e;
+    height: 57%;
+    position: absolute;
+    top: 38%;
+    left: 69%;
+    padding: 30px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    main nav h2 {
+      width: 60%;
+      text-align: left; }
+    main nav p {
+      font-size: 17px;
+      text-align: left; }
+    main nav button {
+      padding: 6px 17px;
+      color: #7aabe3e3;
+      border-radius: 5px;
+      max-width: 122px;
+      box-shadow: 5px 5px 10px grey; }
+
+/*
+ ************************************************
+           DEPOIMENTS
+*************************************************
+*/
+.depoiments {
+  background-image: url("https://cdn.pixabay.com/photo/2015/11/06/17/39/water-1029842_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border;
+  padding: 20px; }
+  .depoiments div {
+    width: 30%;
+    margin: 10px; }
+    .depoiments div h3 {
+      font-size: 20px; }
+    .depoiments div p {
+      font-size: 17px; }
+  .depoiments img {
+    width: 40%;
+    border-radius: 10px; }
+
+/*
+ ************************************************
+           LOCALIZAÇÃO
+*************************************************
+*/
+.localizacao {
+  height: 18rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .localizacao .mapa {
+    padding: 40px; }
+  .localizacao .endereco {
+    text-align: left;
+    font-size: 17px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    margin: 20px; }
+    .localizacao .endereco p {
+      margin: 20px;
+      width: 80%; }
+
+/*
+ ************************************************
+           VIDEO
+*************************************************
+*/
+.video {
+  width: 100%;
+  height: 100vh;
+  background: #9dbbdf9e; }
+  .video iframe {
+    width: 100%;
+    height: 100%; }
+
+/*
+ ************************************************
+           FOOTER
+*************************************************
+*/
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  background: #9dbbdf9e;
+  text-align: center;
+  font-size: 13px;
+  padding: 30px; }
+  .footer p {
+    font-size: 13px; }
+
+/*
+ ************************************************
+             MOBILE
+*************************************************
+*/
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0; }
+  /*
+ ************************************************
+            HEADER MOBILE
+    *************************************************
+    */
+  header ul {
+    width: 100%;
+    margin: 25px 10px; }
+    header ul a {
+      font-size: 11px; }
+  /*
+    ************************************************
+                MAIN MOBILE
+    *************************************************
+    */
+  main h1 {
+    font-size: 25px; }
+  main div {
+    width: 100%;
+    padding: 0; }
+  main nav {
+    position: relative;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    display: block;
+    padding: 10px 13px; }
+    main nav h2 {
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px; }
+    main nav p {
+      font-size: 11px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 11px; }
+    main nav button {
+      padding: 10px 5px;
+      font-size: 11px; }
+  /*
+    ************************************************
+                DEPOIMENTS MOBILE
+    *************************************************
+    */
+  .depoiments {
+    margin: -5px 0; }
+    .depoiments div {
+      width: 100%;
+      margin: 10px; }
+      .depoiments div h3 {
+        font-size: 15px; }
+      .depoiments div p {
+        font-size: 11px; }
+    .depoiments img {
+      display: none; }
+  /*
+    ************************************************
+                  LOCALIZAÇÃO MOBILE
+    *************************************************
+    */
+  .localizacao {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse; }
+    .localizacao .endereco {
+      height: auto;
+      padding: 5px 99px;
+      margin: 5px;
+      text-align: center; }
+      .localizacao .endereco p {
+        margin: 5px;
+        width: 80%;
+        font-size: 11px; }
+    .localizacao .mapa {
+      padding: 10px; }
+  /*
+    ************************************************
+                  VIDEO MOBILE
+    *************************************************
+    */
+  .video {
+    height: 200px; }
+    .video iframe {
+      height: 100%; }
+  /*
+    ************************************************
+                  FOOTER MOBILE
+    *************************************************
+    */
+  .footer {
+    height: 10vh; } }
