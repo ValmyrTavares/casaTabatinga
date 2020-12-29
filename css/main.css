@@ -30,17 +30,7 @@ a{
     "footer footer footer footer";
     grid-gap:17px
 }
-@media(max-width:900px){
-  .estrutura{
-      grid-template-columns:auto;
-      grid-template-rows:auto;
-      grid-template-areas:
-      "menu-principal"
-      "titulo"
-      "imagem-principal"
-     " inf-principal"
-  }
-}
+
     .menu-principal{
         grid-area:menu-principal;
         width:120%;
@@ -189,6 +179,17 @@ a{
            border-radius:20px;
        }
        
+       @media(max-width:900px){
+        .estrutura{
+            grid-template-columns:auto;
+            grid-template-rows:auto;
+            grid-template-areas:
+            "menu-principal"
+            "titulo"
+            "imagem-principal"
+           " inf-principal"
+        }
+      }
         
         
     
